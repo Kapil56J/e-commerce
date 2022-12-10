@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
+    overflow: hidden; 
   }
   
   .product {
@@ -51,3 +52,18 @@
     color: white;
     cursor: pointer;
   }
+
+@media only screen and (max-width: 768px){
+    .shopTitle{
+      margin-right: auto;
+       font-size: 15px;
+    }
+    .products {
+      
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+    .product img{
+      width: 250px;
+    }
+}
